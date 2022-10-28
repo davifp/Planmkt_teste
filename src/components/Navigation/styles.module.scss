@@ -1,6 +1,32 @@
 .nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 50rem;
+  width: 70%;
+}
+
+.anchorContainer {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+
+  a {
+    position: relative;
+    z-index: 999;
+    color: var(--text-color);
+    font-size: 1.5rem;
+  }
+
+  span {
+    position: absolute;
+    left: 0;
+    font-size: 5.5rem;
+    font-weight: 700;
+    opacity: 25%;
+  }
 }

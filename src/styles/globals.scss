@@ -1,8 +1,19 @@
-@use 'variables';
+$bg: #212529;
+$article-color: #292929;
+$color: #f8f9fa;
+$title-color: #939598;
+
+:root {
+  --bg-color: #{$bg};
+  --bg-article-color: #{$article-color};
+  --text-color: #{$color};
+  --title-color: #{$title-color};
+}
+
 html,
 body {
- font-family: 'Montserrat', sans-serif;
- background-color: variables.$bg-color;
+  font-family: "Montserrat", sans-serif;
+  background-color: $bg;
 }
 
 a {
@@ -14,4 +25,5 @@ a {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: 62.5%;
 }

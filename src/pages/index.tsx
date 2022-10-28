@@ -6,11 +6,11 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.cont1}>
         <Header />
-        <div className={styles.main}>
-          <div>Content 1</div>
+        <main className={styles.main}>
+          <div style={{ height: "100vh", width: "100%" }}>Content 1</div>
           <div>Content 2</div>
           <div>Content 3</div>
-        </div>
+        </main>
       </div>
     </div>
   );
