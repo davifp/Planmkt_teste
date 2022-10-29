@@ -1,4 +1,5 @@
 import { Header } from "../components/Header";
+import { News } from "../components/Intro";
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
       <div className={styles.cont1}>
         <Header />
         <main className={styles.main}>
-          <div style={{ height: "100vh", width: "100%" }}>Content 1</div>
+          <News />
           <div>Content 2</div>
           <div>Content 3</div>
         </main>
