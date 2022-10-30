@@ -1,3 +1,4 @@
+import { Contact } from "../components/Contact";
 import { Header } from "../components/Header";
 import { Intro } from "../components/Intro";
 import { News } from "../components/News";
@@ -10,8 +11,8 @@ export default function Home() {
         <Header />
         <main className={styles.main}>
           {/* <Intro /> */}
-          <News />
-          <div>Content 3</div>
+          {/* <News /> */}
+          <Contact />
         </main>
       </div>
     </div>
