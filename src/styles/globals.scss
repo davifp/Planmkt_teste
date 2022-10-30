@@ -1,13 +1,15 @@
 $bg: #212529;
-$article-color: #292929;
-$color: #f8f9fa;
-$title-color: #939598;
+$grey-100: #f8f9fa;
+$grey-300: #939598;
+$grey-500: #292929;
+$grey-700: #1e1e1e;
 
 :root {
   --bg-color: #{$bg};
-  --bg-article-color: #{$article-color};
-  --text-color: #{$color};
-  --title-color: #{$title-color};
+  --bg-article-color: #{$grey-500};
+  --text-color: #{$grey-100};
+  --title-color: #{$grey-300};
+  --bg-title-color: #{$grey-700};
 }
 
 html,
@@ -19,6 +21,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button:hover,
+a:hover {
+  opacity: 75%;
 }
 
 * {

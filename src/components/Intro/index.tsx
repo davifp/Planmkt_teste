@@ -4,7 +4,7 @@ import { FiArrowDownRight } from "react-icons/fi";
 import styles from "./index.module.scss";
 import img from "../../../public/image1.png";
 
-export const News: React.FC = () => {
+export const Intro: React.FC = () => {
   return (
     <div className={styles.contentContainer}>
       <div className={styles.wrapper}>
