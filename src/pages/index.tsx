@@ -10,8 +10,8 @@ export default function Home() {
       <div className={styles.cont1}>
         <Header />
         <main className={styles.main}>
-          {/* <Intro /> */}
-          {/* <News /> */}
+          <Intro />
+          <News />
           <Contact />
         </main>
       </div>
