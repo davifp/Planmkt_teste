@@ -5,6 +5,10 @@
   align-items: flex-start;
   height: 50rem;
   width: 70%;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .anchorContainer {
