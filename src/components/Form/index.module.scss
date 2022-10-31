@@ -27,6 +27,7 @@
     color: var(--text-color);
     margin-top: 2rem;
     cursor: pointer;
+    width: min-content;
 
     span {
       display: flex;
