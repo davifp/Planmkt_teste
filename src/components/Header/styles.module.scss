@@ -1,21 +1,16 @@
 .headerContainer {
-  position: fixed;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 20%;
-  height: 100vh;
-  border-right: 1px solid var(--title-color);
+  display: none;
 
   nav {
     display: none;
   }
 
   @media screen and (max-width: 1200px) {
+    display: flex;
     position: relative;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 10rem;
     border-bottom: 1px solid var(--text-color);
@@ -103,61 +98,11 @@
       align-items: center;
       justify-content: center;
     }
-
-    .footer {
-      display: none;
-    }
   }
 
   .logo {
     margin: 0 2rem;
+    height: 6.5rem;
+    width: 14rem;
   }
-}
-
-.logo {
-  margin-top: 5rem;
-  height: 6.5rem;
-  width: 14rem;
-}
-
-.footer {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 15rem;
-  width: 100%;
-  border-top: 1px solid var(--title-color);
-}
-
-.textContainer {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 70%;
-  height: 10rem;
-
-  p {
-    position: relative;
-    z-index: 999;
-    font-size: 2.5rem;
-    color: var(--title-color);
-  }
-
-  span {
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 7rem;
-    font-weight: 700;
-    opacity: 25%;
-  }
-}
-
-.icon {
-  position: absolute;
-  right: 2.5rem;
-  bottom: 2rem;
-  color: #f4f4f4;
 }

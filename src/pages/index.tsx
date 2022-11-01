@@ -5,6 +5,7 @@ import { News } from "../components/News";
 import styles from "../styles/Home.module.scss";
 import useScrollSnap from "react-use-scroll-snap";
 import { useRef } from "react";
+import { Aside } from "../components/Aside";
 
 export default function Home() {
   const scrollRef = useRef(null);
@@ -12,8 +13,9 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <Header />
+      <Aside />
       <main className={styles.main} ref={scrollRef}>
+        <Header />
         <Intro />
         <News />
         <Contact />
