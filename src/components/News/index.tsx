@@ -1,5 +1,6 @@
 import { Card } from "../Card";
 import styles from "./index.module.scss";
+import { FiArrowDownRight } from "react-icons/fi";
 
 export const News: React.FC = () => {
   const cards = [
@@ -45,7 +46,12 @@ export const News: React.FC = () => {
       <div className={styles.wrapper}>
         <div className={styles.titleContainer}>
           <h2>/Plan news</h2>
-          <h1>/Cases Games</h1>
+          <div>
+            <h1>/Cases Games</h1>
+            <a href="">
+              CLIQUE AQUI PARA VER TODO O BLOG <FiArrowDownRight size={20} />
+            </a>
+          </div>
           <span>03.</span>
         </div>
         <div className={styles.cardContainer}>

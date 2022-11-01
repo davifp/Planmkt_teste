@@ -43,10 +43,21 @@
     color: var(--text-color);
   }
 
-  h1 {
-    font-size: 4.6rem;
-    font-weight: 400;
-    color: var(--title-color);
+  div {
+    display: flex;
+    gap: 2rem;
+    align-items: baseline;
+    h1 {
+      font-size: 4.6rem;
+      font-weight: 400;
+      color: var(--title-color);
+    }
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 1.3rem;
+      color: var(--title-color);
+    }
   }
 
   span {

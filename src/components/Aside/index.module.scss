@@ -9,7 +9,7 @@
   height: 100vh;
   border-right: 1px solid var(--title-color);
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
