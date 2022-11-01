@@ -41,7 +41,7 @@ export const News: React.FC = () => {
   ];
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="news">
       <div className={styles.wrapper}>
         <div className={styles.titleContainer}>
           <h2>/Plan news</h2>

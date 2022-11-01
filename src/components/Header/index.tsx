@@ -12,6 +12,12 @@ export const Header: React.FC = () => {
     setShow(!show);
   }
 
+  function handleAnchor(id: string) {
+    const anchor = document.querySelector(id);
+    anchor?.scrollIntoView({ behavior: "smooth", block: "center" });
+    setShow(false);
+  }
+
   return (
     <header className={styles.headerContainer}>
       <div>
@@ -26,23 +32,23 @@ export const Header: React.FC = () => {
         <nav>
           <ul>
             <li className={styles.anchorContainer}>
-              <a href="">/QUEM SOMOS</a>
+              <a>/QUEM SOMOS</a>
               <span>01.</span>
             </li>
             <li className={styles.anchorContainer}>
-              <a href="">/O QUE FAZEMOS</a>
+              <a onClick={() => handleAnchor("#intro")}>/O QUE FAZEMOS</a>
               <span>02.</span>
             </li>
             <li className={styles.anchorContainer}>
-              <a href="">/PLAN NEWS</a>
+              <a onClick={() => handleAnchor("#news")}>/PLAN NEWS</a>
               <span>03.</span>
             </li>
             <li className={styles.anchorContainer}>
-              <a href="">/NOSSOS CLIENTES</a>
+              <a>/NOSSOS CLIENTES</a>
               <span>04.</span>
             </li>
             <li className={styles.anchorContainer}>
-              <a href="">/CONTATO</a>
+              <a onClick={() => handleAnchor("#contact")}>/CONTACT</a>
               <span>05.</span>
             </li>
           </ul>

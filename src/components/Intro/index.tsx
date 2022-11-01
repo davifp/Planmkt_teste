@@ -20,7 +20,7 @@ export const Intro: React.FC = () => {
   ];
 
   return (
-    <div className={styles.contentContainer}>
+    <div className={styles.contentContainer} id="intro">
       <div className={styles.wrapper}>
         <div className={styles.introduction}>
           <div className={styles.titleContainer}>
