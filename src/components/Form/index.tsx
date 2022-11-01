@@ -82,7 +82,7 @@ export const Form: React.FC = () => {
           >
             <label htmlFor="reachout">Nome:</label>
             <Field
-              class={styles.nameInput}
+              className={styles.nameInput}
               type="text"
               name="name"
               autoCorrect="off"
@@ -96,7 +96,7 @@ export const Form: React.FC = () => {
               <div className={styles.emailContainer}>
                 <label htmlFor="">E-mail:</label>
                 <Field
-                  class={styles.emailInput}
+                  className={styles.emailInput}
                   type="email"
                   name="email"
                   autoCapitalize="off"
@@ -133,7 +133,7 @@ export const Form: React.FC = () => {
             </div>
             <label htmlFor="">Mensagem:</label>
             <Field
-              class={styles.textAreaInput}
+              className={styles.textAreaInput}
               component="textarea"
               name="message"
               autoCapitalize="on"

@@ -1,9 +1,11 @@
 .headerContainer {
+  position: fixed;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 35rem;
+  width: 20%;
   height: 100vh;
   border-right: 1px solid var(--title-color);
 
@@ -12,6 +14,7 @@
   }
 
   @media screen and (max-width: 1200px) {
+    position: relative;
     flex-direction: row;
     width: 100%;
     height: 10rem;
@@ -44,7 +47,7 @@
     .one,
     .two,
     .three {
-      background-color: #f4f4f4;
+      background-color: var(--text-color);
       height: 0.5rem;
       width: 100%;
       transition-duration: 0.3s;
@@ -58,6 +61,7 @@
       width: 4rem;
       height: 3rem;
       margin-right: 2rem;
+      border-radius: 50%;
     }
 
     .menuSectionOn {

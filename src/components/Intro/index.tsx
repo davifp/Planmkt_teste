@@ -1,10 +1,24 @@
-import Image from "next/image";
 import { GiConsoleController } from "react-icons/gi";
 import { FiArrowDownRight } from "react-icons/fi";
 import styles from "./index.module.scss";
-import img from "../../../public/image1.png";
+import { IntroCard } from "../IntroCard/index";
 
 export const Intro: React.FC = () => {
+  const cards = [
+    {
+      image: "/image2.png",
+      text: "consequuntur saepe, rem aperiam ullam corporis magnam. Qui molestiae consequuntur saepe, rem aperiam ullam",
+    },
+    {
+      image: "/image3.png",
+      text: "consequuntur saepe, rem aperiam ullam corporis magnam. Qui molestiae consequuntur saepe, rem aperiam ullam",
+    },
+    {
+      image: "/image1.png",
+      text: "consequuntur saepe, rem aperiam ullam corporis magnam. Qui molestiae consequuntur saepe, rem aperiam ullam",
+    },
+  ];
+
   return (
     <div className={styles.contentContainer}>
       <div className={styles.wrapper}>
@@ -29,36 +43,9 @@ export const Intro: React.FC = () => {
           </p>
         </div>
         <div className={styles.cardContainer}>
-          <div className={styles.card}>
-            <div className={styles.imgContainer}>
-              <Image className={styles.img} fill src={img} alt="Card" />
-            </div>
-            <p>
-              A <strong>PlanXP</strong> tem uma equipe qualificada para o{" "}
-              <strong>desenvolvimento de jogos digitais</strong> para{" "}
-              <strong>dispositivos móveis</strong>(smartphones, tablets e afins)
-            </p>
-          </div>
-          <div className={styles.card}>
-            <div className={styles.imgContainer}>
-              <Image className={styles.img} fill src={img} alt="Card" />
-            </div>
-            <p>
-              A <strong>PlanXP</strong> tem uma equipe qualificada para o{" "}
-              <strong>desenvolvimento de jogos digitais</strong> para{" "}
-              <strong>dispositivos móveis</strong>(smartphones, tablets e afins)
-            </p>
-          </div>
-          <div className={styles.card}>
-            <div className={styles.imgContainer}>
-              <Image className={styles.img} src={img} fill alt="Card" />
-            </div>
-            <p>
-              A <strong>PlanXP</strong> tem uma equipe qualificada para o{" "}
-              <strong>desenvolvimento de jogos digitais</strong> para{" "}
-              <strong>dispositivos móveis</strong>(smartphones, tablets e afins)
-            </p>
-          </div>
+          {cards.map((card) => (
+            <IntroCard key={card.image} image={card.image} text={card.text} />
+          ))}
           <div className={styles.contactCard}>
             <div className={styles.imgContainer}>
               <GiConsoleController className={styles.icon} size={50} />
