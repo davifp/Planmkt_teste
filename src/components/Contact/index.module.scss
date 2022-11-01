@@ -66,3 +66,61 @@
   column-gap: 2.5rem;
   row-gap: 5rem;
 }
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 25rem;
+
+  h4 {
+    color: var(--title-color);
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+.iconContainer {
+  display: flex;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--title-color);
+  }
+}
+
+.adressCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 25rem;
+
+  h4 {
+    display: flex;
+    align-items: center;
+    color: var(--title-color);
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+}

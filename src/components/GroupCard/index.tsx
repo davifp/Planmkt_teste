@@ -2,18 +2,25 @@ import Image from "next/image";
 import styles from "./index.module.scss";
 import { FiArrowDownRight } from "react-icons/fi";
 
-import logo from "../../../public/fullup.png";
+interface Card {
+  image: string;
+  text: string;
+  anchor: string;
+}
 
-export const GroupCard: React.FC = () => {
+export const GroupCard: React.FC<Card> = ({ anchor, image, text }) => {
   return (
     <div className={styles.card}>
       <div className={styles.imageWrapper}>
-        <Image src={logo} alt="Fullup logo" />
+        <Image
+          src={image}
+          alt="Fullup logo"
+          fill
+          sizes="(max-width: 768px) 100vw"
+        />
       </div>
-      <p>
-        A FullUp é uma agência especializada em branding design e campanhas.
-      </p>
-      <a href="">
+      <p>{text}</p>
+      <a href={anchor}>
         <span>CONHEÇA</span> <FiArrowDownRight size={20} />
       </a>
     </div>

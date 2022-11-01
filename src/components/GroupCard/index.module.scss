@@ -15,13 +15,11 @@
     font-size: 1.7rem;
     width: min-content;
   }
-  border: 1px solid yellow;
 }
 
 .imageWrapper {
-  max-width: 10rem;
-  img {
-    width: 100%;
-    height: 100%;
-  }
+  position: relative;
+  width: 10rem;
+  height: 5rem;
+  margin-bottom: 1rem;
 }

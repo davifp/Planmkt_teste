@@ -113,7 +113,7 @@ export const Form: React.FC = () => {
               <div className={styles.phoneContainer}>
                 <label htmlFor="">Telefone:</label>
                 <Field
-                  class={styles.phoneInput}
+                  className={styles.phoneInput}
                   name="phone"
                   valid={touched.phone && !errors.phone}
                   error={touched.phone && errors.phone}

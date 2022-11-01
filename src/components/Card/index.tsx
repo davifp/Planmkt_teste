@@ -1,26 +1,37 @@
 import Image from "next/image";
-import img from "../../../public/image2.png";
 import { FiArrowDownRight } from "react-icons/fi";
 import { GiConsoleController } from "react-icons/gi";
 import styles from "./index.module.scss";
 
-export const Card: React.FC = () => {
+interface Card {
+  image: string;
+  name: string;
+  title: string;
+  text: string;
+  anchor: string;
+}
+
+export const Card: React.FC<Card> = ({ anchor, image, name, text, title }) => {
   return (
     <div className={styles.card}>
       <div className={styles.imgContainer}>
-        <Image className={styles.img} src={img} alt="Card" />
+        <Image
+          className={styles.img}
+          src={image}
+          fill
+          sizes="(max-width: 768px) 100vw"
+          alt="Card"
+        />
         <span>
           <GiConsoleController size={20} />
         </span>
       </div>
       <h4>
-        <span>SKA</span>
+        <span>{name}</span>
       </h4>
-      <h3>Plan cria novo site da SKA</h3>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-      </p>
-      <a href="">
+      <h3>{title}</h3>
+      <p>{text}</p>
+      <a href={anchor}>
         <span>SAIBA MAIS</span>
         <FiArrowDownRight size={20} />
       </a>
