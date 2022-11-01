@@ -75,6 +75,10 @@
       position: absolute;
       right: 3rem;
       top: 4.5rem;
+
+      @media screen and (max-width: 768px) {
+        right: 4rem;
+      }
     }
 
     .menuSectionOn .menuToggle .one {
