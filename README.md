@@ -1,34 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Desafio Técnico da Plan Marketing
 
-## Getting Started
+Este projeto foi proposto como desafio para a etapa do processo seletivo.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Iniciando o Projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone o repositório:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- `git clone https://github.com/davifp/Planmkt_teste.git`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+2. Para instalar as dependências digite:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- `yarn` ou `npm install`
 
-## Learn More
+3. Para executar o projeto digite:
 
-To learn more about Next.js, take a look at the following resources:
+- `yarn dev` ou `npm run dev`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Desktop design
 
-## Deploy on Vercel
+![plansite](https://user-images.githubusercontent.com/56058239/199301001-691867e2-fded-4b27-9143-0e48140eb8ca.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Mobile design
+![mobile](https://user-images.githubusercontent.com/56058239/199302324-b9e169e6-8772-413a-a6d1-619d7d1b7742.png)
+
